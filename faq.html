@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - Brutal 100Hari</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container">
+    <h1>FAQ</h1>
+    
+    <div class="judulfaq">
+    <div class="faq-item">
+  <h3>Siapa pembuat website ini?</h3>
+  <p style="display: none;">Ini dibuat oleh seorang pelajar yang punya rasa ingin tahu tentang dunia website. Cek profil pengembang di halaman Tentang Kami.</p>
+</div>
+</div>
+
+    <div class="judulfaq">
+    <div class="faq-item">
+  <h3>Apakah kita harus bayar untuk mengakses website ini?</h3>
+  <p style="display: none;">TIDAK. Website kami gratis dan dapat diakses oleh siapapun. Semua fungsi yang ada dapat digunakan tanpa biaya.</p>
+</div>
+</div>
+
+        <div class="judulfaq">
+          <div class="faq-item">
+  <h3>Apakah harus donasi setelah menggunakan website ini?</h3>
+  <p style="display: none;">TIDAK. Website ini gratis untuk semua kalangan. Donasi hanya fitur opsional untuk mendukung pengembang, tanpa paksaan.</p>
+</div>
+</div>
+
+untuk pertanyaan lebih lanjut anda dapat menghubungi nomor di halaman beranda
+
+  <div class="bgluar">
+    <div class="tentang">
+      <div class="faq">
+        <a href="index.html">beranda</a>
+        <a href="tentang.html">tentang kami</a>
+      </div>
+    </div>
+  </div>
+
+<script>
+  document.querySelectorAll('.faq-item h3').forEach(judul => {
+    judul.style.cursor = 'pointer';
+    judul.addEventListener('click', () => {
+      const isi = judul.nextElementSibling;
+      isi.style.display = isi.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+</body>
+</html>

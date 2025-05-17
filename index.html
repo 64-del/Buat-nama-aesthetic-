@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cek Nama Estetik</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Cek Nama Estetikmu</h1>
+    <p>Masukkan namamu untuk lihat versi estetik + artinya!</p>
+
+    <input type="text" id="nama" placeholder="Masukkan nama depan"/>
+    
+
+    <button onclick="cariNama()">Cari Nama Estetik</button>
+
+    <div id="hasil" class="hasil-box">
+      <!-- Hasil akan muncul di sini -->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="wa-box">
+      <h3>Request Nama Estetik Khusus</h3>
+      <input type="text" id="namaRequest" placeholder="Tulis nama kamu">
+      <textarea id="pesanRequest" placeholder="Tambahkan pesan (opsional)"></textarea>
+      <button onclick="kirimWa()">Kirim ke WhatsApp</button>
+    </div>
+  </div>
+  
+  <div class="bgluar">
+  <div class="tentang">
+    <div class="faq">
+      <a href="tentang.html">tentang kami</a>
+      <a href="faq.html">faq</a>
+    </div>
+  </div>
+  </div>
+  
+  <div class="saweria">
+  <a href="https://saweria.co/Asleo" target="_blank">
+  <button>
+    kirim donasi (opsional)
+  </button>
+</a>
+</div>
+
+terimakasih telah berkunjung
+
+  <script src="script.js"></script>
+</body>
+</html>
